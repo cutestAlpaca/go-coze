@@ -54,6 +54,14 @@ type StreamingResponse struct {
 	Messages Message `json:"message"`
 }
 
+type WorkFlowRunResponse struct {
+	Cost  string `json:"cost"`
+	Code  int    `json:"code"`
+	Msg   string `json:"msg"`
+	Data  string `json:"data"`
+	Token int    `json:"token"`
+}
+
 type HttpErrorResponse struct {
 	Status     string // e.g. "200 OK"
 	StatusCode int    `json:"status_code"` // http 状态码

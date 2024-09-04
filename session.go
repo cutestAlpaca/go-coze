@@ -16,7 +16,8 @@ import (
 const (
 	InternationalUrl = "https://api.coze.com/open_api/v2/chat"
 
-	url                   = "https://api.coze.cn/open_api/v2/chat"
+	urlV2                 = "https://api.coze.cn/open_api/v2/chat"
+	urlV3                 = "https://api.coze.cn/open_api/v3/chat"
 	HeaderAuthorization   = "Authorization"
 	HeaderContentType     = "Content-Type"
 	HeaderConnection      = "Connection"
@@ -72,7 +73,7 @@ func (c *Session) Request(ctx context.Context) (*NonStreamingResponse, error) {
 		return nil, err
 	}
 	resp := new(NonStreamingResponse)
-	req, err := http.NewRequestWithContext(ctx, http.MethodPost, url, bytes.NewReader(body))
+	req, err := http.NewRequestWithContext(ctx, http.MethodPost, urlV2, bytes.NewReader(body))
 	if err != nil {
 		return nil, err
 	}
@@ -123,7 +124,7 @@ func (c *Session) StreamRequest(ctx context.Context) (<-chan *StreamingResponse,
 			return
 		}
 
-		req, err := http.NewRequestWithContext(ctx, http.MethodPost, url, bytes.NewReader(body))
+		req, err := http.NewRequestWithContext(ctx, http.MethodPost, urlV2, bytes.NewReader(body))
 		if err != nil {
 			errChan <- err
 			return
