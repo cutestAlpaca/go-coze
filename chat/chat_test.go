@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/chenmingyong0423/go-coze/common/request"
+	"github.com/cutestAlpaca/go-coze/common/request"
 
 	"github.com/stretchr/testify/require"
 )

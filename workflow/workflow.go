@@ -4,7 +4,7 @@ import (
 	"bytes"
 	"context"
 	"fmt"
-	"github.com/chenmingyong0423/go-coze/chat"
+	"github.com/cutestAlpaca/go-coze/chat"
 	jsoniter "github.com/json-iterator/go"
 	"io"
 	"net/http"

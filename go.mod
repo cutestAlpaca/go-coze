@@ -1,4 +1,4 @@
-module github.com/chenmingyong0423/go-coze
+module github.com/cutestAlpaca/go-coze
 
 go 1.18
 

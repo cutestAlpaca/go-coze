@@ -11,10 +11,10 @@ import (
 	"strings"
 	"time"
 
-	"github.com/chenmingyong0423/go-coze/common/response"
+	"github.com/cutestAlpaca/go-coze/common/response"
 	jsoniter "github.com/json-iterator/go"
 
-	"github.com/chenmingyong0423/go-coze/common/request"
+	"github.com/cutestAlpaca/go-coze/common/request"
 )
 
 const (

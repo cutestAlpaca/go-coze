@@ -3,7 +3,7 @@ package chat
 import (
 	"fmt"
 
-	"github.com/chenmingyong0423/go-coze/common/response"
+	"github.com/cutestAlpaca/go-coze/common/response"
 )
 
 type BaseResponse struct {
